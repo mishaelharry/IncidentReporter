@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.app.incidentreporter.fragments.NewIncidentFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Description"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_contact_mesaage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:textColorHint="@color/colorText">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/contact_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:lines="5"
+            android:background="@drawable/button_outline"
+            android:textColor="@android:color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_outline"
+        android:textColor="@android:color/black"
+        android:text="Take Photo or Video" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_outline"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="5dp"
+        android:text="Get Location" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Address: 33 Saka Tinubu"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Longitude: 13456789065"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Latitude: 13456789065"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_dark"
+        android:textColor="@android:color/black"
+        android:text="Submit" />
+
+</LinearLayout>
