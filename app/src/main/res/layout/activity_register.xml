@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.app.incidentreporter.activites.LoginActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="0dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:tint="@color/colorAccent"
+            android:src="@drawable/ic_playlist_add_check_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="@string/app_name"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorText">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawableTint="@color/colorAccent"
+                android:textColor="@color/colorText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/address_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorText">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/address_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="text"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawableTint="@color/colorAccent"
+                android:textColor="@color/colorText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/state_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorText">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/state_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State"
+                android:inputType="text"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawableTint="@color/colorAccent"
+                android:textColor="@color/colorText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dob_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorText">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/dob_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date of Birth"
+                android:inputType="text"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawableTint="@color/colorAccent"
+                android:textColor="@color/colorText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/occupation_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorText">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/occupation_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Occupation"
+                android:inputType="text"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawableTint="@color/colorAccent"
+                android:textColor="@color/colorText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorText">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="text"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawableTint="@color/colorAccent"
+                android:textColor="@color/colorText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorText">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawableTint="@color/colorAccent"
+                android:textColor="@color/colorText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_dark"
+            android:textColor="@android:color/black"
+            android:text="Register" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v4.widget.NestedScrollView>
