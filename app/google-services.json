@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "200094294052",
+    "firebase_url": "https://incidentreporter-73483.firebaseio.com",
+    "project_id": "incidentreporter-73483",
+    "storage_bucket": "incidentreporter-73483.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200094294052:android:d38f4d2a5aca4214",
+        "android_client_info": {
+          "package_name": "com.app.incidentreporter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200094294052-4s54jbqtuqucpva4fkg4ahvbdc0aqpec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9mPtAKddJNvDNavoB6-GrZh3bNDXzU7c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

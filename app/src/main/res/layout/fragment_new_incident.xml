@@ -13,65 +13,68 @@
         android:text="Description"/>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/input_layout_contact_mesaage"
+        android:id="@+id/description_wrapper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="-5dp"
         android:textColorHint="@color/colorText">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/contact_message"
+            android:id="@+id/description_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
             android:padding="10dp"
-            android:lines="5"
+            android:lines="3"
+            android:background="@drawable/button_outline"
+            android:textColor="@android:color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/image_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:textColorHint="@color/colorText">
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_add_a_photo_black_12dp"
+            android:background="@drawable/button_dotted_outline"
+            android:id="@+id/image_input"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Location"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/location_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:textColorHint="@color/colorText">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/location_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:lines="2"
             android:background="@drawable/button_outline"
             android:textColor="@android:color/black" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.v7.widget.AppCompatButton
-        android:id="@+id/button_photo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_outline"
-        android:textColor="@android:color/black"
-        android:text="Take Photo or Video" />
-
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/button_location"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_outline"
-        android:textColor="@android:color/black"
-        android:layout_marginBottom="5dp"
-        android:text="Get Location" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Address: 33 Saka Tinubu"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Longitude: 13456789065"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Latitude: 13456789065"/>
-
-    <android.support.v7.widget.AppCompatButton
         android:id="@+id/button_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/button_dark"
         android:textColor="@android:color/black"
         android:text="Submit" />
