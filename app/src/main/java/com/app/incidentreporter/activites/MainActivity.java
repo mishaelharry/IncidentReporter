@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
+            case R.id.action_guide:
+                startActivity(new Intent(MainActivity.this, CPRStepActivity.class));
+                break;
             case R.id.action_logout:
                 logOut();
                 break;

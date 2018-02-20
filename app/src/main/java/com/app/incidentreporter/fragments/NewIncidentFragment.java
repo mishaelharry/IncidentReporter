@@ -82,7 +82,7 @@ public class NewIncidentFragment extends Fragment {
         progressDialog = new ProgressDialog(getActivity());
 
         storageReference = FirebaseStorage.getInstance().getReference();
-        database = FirebaseDatabase.getInstance().getReference().child("Incident");
+        database = FirebaseDatabase.getInstance().getReference().child("Incidents");
         auth = FirebaseAuth.getInstance();
 
         descriptionInput =  rootView.findViewById(R.id.description_input);
@@ -204,12 +204,12 @@ public class NewIncidentFragment extends Fragment {
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     Uri incidentUrl = taskSnapshot.getDownloadUrl();
                     String uid = auth.getCurrentUser().getUid();
-                    Incident incident = new Incident(uid, descriptionValue, incidentUrl, locationValue);
+                    Incident incident = new Incident(uid, descriptionValue, incidentUrl.toString(), locationValue);
 
                     DatabaseReference newIncident = database.push();
                     newIncident.child("uid").setValue(incident.getUid());
                     newIncident.child("description").setValue(incident.getDescription());
-                    newIncident.child("image").setValue(incident.getUri().toString());
+                    newIncident.child("image").setValue(incident.getImage());
                     newIncident.child("location").setValue(incident.getLocation());
 
                     progressDialog.dismiss();

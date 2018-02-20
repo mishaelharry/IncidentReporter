@@ -10,13 +10,16 @@ public class Incident {
 
     private String uid;
     private String description;
-    private Uri uri;
+    private String image;
     private String location;
 
-    public Incident(String uid, String description, Uri uri, String location) {
+    public Incident() {
+    }
+
+    public Incident(String uid, String description, String image, String location) {
         this.uid = uid;
         this.description = description;
-        this.uri = uri;
+        this.image = image;
         this.location = location;
     }
 
@@ -36,12 +39,12 @@ public class Incident {
         this.description = description;
     }
 
-    public Uri getUri() {
-        return uri;
+    public String getImage() {
+        return image;
     }
 
-    public void setUri(Uri uri) {
-        this.uri = uri;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getLocation() {
